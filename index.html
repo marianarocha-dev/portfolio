@@ -1,200 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      rel="stylesheet"
-    />
-    
-  </head>
-  <body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana Rocha</title>
 
-    <header class="header">
-        <a href="#" class="logo"><span>Mariana Rocha</span></a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-        <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
+    <link rel="stylesheet" href="style.css">
 
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
 
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
+     <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#sobre">About</a></li>
+                <li><a href="#projetos">Projects</a></li>
+                <li><a href="#contato">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
 
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-
-        <a href="https://github.com/marianarocha-dev" target="_blank" rel="noopener noreferrer">
-        <button class="visit-btn">Visit Github</button>
-        </a>
-
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-name">Mariana Rocha</h1>
+            <p>Fullstack Development | AI | UX & UI Design</p>
+        </div>
     </header>
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="IMG_8019 (1) 3.png" alt="">
+    <main>
+        <section id="sobre" class="about-section">
+            <div class="about-intro">
+                <img src="WhatsApp Image 2025-07-28 at 20.10.05 1 (1).svg" alt="Sua Foto Profissional" class="profile-pic">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <p>
+                        I'm Mariana, a professional passionate about innovation and solutions that impact real users. I'm currently an undergraduate student in Systems Analysis and Development at Unisinos, where I always seek broad knowledge and a humanized approach to technology-related processes. 
+Through my previous professional background, I have developed skills such as agility in solving complex problems and customer focus, as well as strategic thinking to deal with technical issues.
 
-            <div class="info-box">
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>Mariana Rocha</h1>
-                    <span>Technical Support Intern and Fullstack Developer</span>
-                </div>
-
-                <div class="socials">
-                    <a href="https://github.com/marianarocha-dev" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/marianarochadev/" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-info">
-
-            <div class="grid">
-                <div class="grid-card">
-                    <i class="fa-solid fa-book"></i>
-                    <span>Academic - Associate Degree in Systems Analisys and Development</span>
-                    <h3>Unisinos</h3>
-                    <p>Subjects on programming languages, agile methodologies and others</p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Technical Stack</span>
-                    <h3>Fullstack development</h3>
-                    <p>Java, SpringBoot, PostgreSQL, Javascript, HTML, CSS, Git/Github, 
-                        Scrum Agile, SAP HANA database
-                        </p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-solid fa-robot"></i>
-                    <span>Technical Support</span>
-                    <p> technical troubleshooting, demand management, assertive communication, analytical ability to solve problems, 
-                        development of KBAs, ability to ensure customer success, management TOTVS Protheus System
-</p>
-                    
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-solid fa-language"></i>
-                    <span>Languages</span>
-                    <h3>English - Advanced Level</h3>
-                    <h3>Spanish -Intermediate</h3>
-                    <h3>German - Basic</h3>
-                    
-                </div>
-
-            </div>
-
-            <img 
-
-        </div>
-    </section>
-
-
-    <section id="projects" class="projects">
-
-        <h2 class="section-title">Recent Projects</h2>
-
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="captura.JPG" alt="">
-                <h3>Technical Challenge - Cooperative Voting System</h3>
-                <p>In this project, a cooperative voting system was developed, where members of the financial institution could create agendas and also vote on existing agendas. It was necessary to carefully follow the business rules, which involved various factors such as validating the user's identity, avoiding duplicate or conflicting member id's, voting time, among others. In addition, this application required a structured CRUD that allowed the frontend team to be more viable. 
-                    Application stack: Java, Springboot, Flyway and PostgreSQL, Insomnia for tests.
-                </p>
-                <div class="btn-group">
-                    <a href="https://github.com/marianarocha-dev/desafiotecnico-backend" target="_blank" rel="noopener noreferrer">
-                    <div class="btn">Github</div>
-                    </a>
+                    </p>
                 </div>
             </div>
-        </div>
 
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="nome.JPG" alt="">
-                <h3>UI Design - Freelancer</h3>
-                <p>Development new design features and redesign a user interface solution for a schedule app using Figma. 
-                </p>
-            </div>
-        </div>
-
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Chatbot Conversational Flow</h3>
-                <p>Development a conversacional flow using FigJam tool. Project related at my current internship.
-                </p>
-                <div class="btn-group">
-                    <a href="https://www.figma.com/board/nY0PzOeaq57YdlsTKxbEkF/solution-chatbot-project?node-id=0-1&p=f&t=pXqXWupSBJot2dtA-0" target="_blank" rel="noopener noreferrer">
-                    <div class="btn">FigJam</div>
-                    </a>
+            <div class="about-details">
+                <div class="about-subsection">
+                    <h3>Technical Stack</h3>
+                    <div class="stack-container">
+                        <div class="stack-item"><span>HTML5</span></div>
+                        <div class="stack-item"><span>CSS3</span></div>
+                        <div class="stack-item"><span>JavaScript</span></div>
+                        <div class="stack-item"><span>React</span></div>
+                        <div class="stack-item"><span>Node.js</span></div>
+                        <div class="stack-item"><span>Typescript</span></div>
+                        <div class="stack-item"><span>Java</span></div>
+                        <div class="stack-item"><span>SpringBoot</span></div>
+                        <div class="stack-item"><span>Figma</span></div>
+                    </div>
                 </div>
+
+                <div class="column right">
+                <div class="about-subsection">
+                    <h3>Academic</h3>
+                    <div class="education-item">
+                        <h4>Associate Degree in System Analisys and Development</h4>
+                        <p>2025 - 2027</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-subsection">
+        <h3>Professional Experience</h3>
+        <div class="education-item">
+            <h4>Master - Portuguese Language Specialist (Brazil) - AI Trainer - Invisible Technologies</h4>
+            <p>Remote || August 2025 - present</p>
+            </div>
+        <div class="education-item">
+            <h4>UI Designer - Freelancer</h4>
+            <p>Remote/Global Platforms|| 2025</p>
+        </div>
+        <div class="education-item">
+            <h4>Technical Support Intern</h4>
+            <p>On-site || April 2025 - August 2025</p>
+        </div>
+    </div>
+
+        <div class="about-subsection">
+        <h3>Languages</h3>
+        <div class="education-item">
+            <h4>English</h4>
+            <p>Advanced</p>
+            </div>
+        <div class="education-item">
+            <h4>German</h4>
+            <p>Basic</p>
+        </div>
+        <div class="education-item">
+            <h4>Spanish</h4>
+            <p>Basic</p>
+        </div>
+    </div>
+            
+        </section>
+
+    
+
+        <section id="projetos" class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <img src="desafio-db.JPG" alt="Imagem do Projeto Animal Adoption">
+            <h3>Animal Adoption</h3>
+            <div class="project-tags">
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Figma</span>
+            </div>
+            <a href="https://github.com/marianarocha-dev/desafio-marianarocha-dev-2025" target="_blank" class="btn-project">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <img src="05.jpg" alt="Imagem do Projeto Scheduling App">
+            <h3>Scheduling App - UI</h3>
+            <div class="project-tags">
+                <span>Figma</span>
             </div>
         </div>
 
-    </section>
+        <div class="project-card">
+            <img src="captura.JPG" alt="Imagem do Projeto Cooperative voting system">
+            <h3>Cooperative voting system</h3>
+            <div class="project-tags">
+                <span>Java</span>
+                <span>SpringBoot</span>
+                <span>Insomnia</span>
+            </div>
+            <a href="https://github.com/marianarocha-dev/desafiotecnico-fullstack" target="_blank" class="btn-project">GitHub</a>
+        </div>
 
-    <section class="contact" id="contact">
-        <div class="input-box">
+    </div>
+</section>
+    </main>
 
-            <h2 class="section-title">Contact Me</h2>
-            <div class="input">
-                <p>Email:</p>
-                <h3>rochamari.amaral@gmail.com</h3>
+    <footer id="contato" class="contact-section">
+        <h2>Contato</h2>
+        <div class="contact-links">
+            <a href="mailto:seuemail@exemplo.com" class="contact-email">rochamari.amaral@gmail.com</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mariana-rocha-891b482b6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/marianarocha-dev" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
-        </ul>
-
-        <p class="copyright">All Rights Reserved | Mariana Rocha</p>
     </footer>
 
-
-    
-    
-
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
